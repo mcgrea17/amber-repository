@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 .clear {
    clear: both;
 }
@@ -40,6 +41,8 @@
   color: 000eff;
   font-size: 25px;
   border-bottom: 1px solid #09487f;
+  font-family: 'sailregular', sans-serif;
+  font-weight: bold;
 }
 
 header {
@@ -48,4 +51,15 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'sailregular', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+
+}
+
+h2 {
+  font-family: 'Courgette', cursive;
 }
