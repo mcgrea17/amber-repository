@@ -32,7 +32,7 @@
     
       <div class="col-4 slogan">
 
-        Splurting out unsolicited advice about entrepreneurship since 2016
+        Splurting out unsolicited advice about tennis since 2019
       
       </div>
 
@@ -40,13 +40,38 @@
 
         <%= link_to 'Contribute', '#' %>
         <%= link_to 'About', '#' %>
+      </div>
     
     </header>
 
     <hr />
-    
+
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+
+          <div class="col-6 footer blurb">
+            Hope to see you on the courts soon! <a href=https://amber-mcgregor.netlify.com/">[Amber McGregor]</a><br />
+            Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+
+            
+          </div>
+          <p class="text-muted"> Thank you for visiting and see you on the Court!! </p>
+
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
