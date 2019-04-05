@@ -40,11 +40,43 @@
 
       <div class="col-5 links">
 
-        <%= link_to 'Contribute', new_quote_path %>
-        <%= link_to 'About', '#' %>
+        
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        
+        <%= link_to 'About', about_path %>
       </div>
     
     </header>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+        </div>
+        <%= simple_form_for Quote.new do |f| %>
+
+        <div class="modal-body">
+          
+          <%= f.input :saying %>
+          <%= f.input :author %>
+          <br />
+          <%= f.submit 'Create', class: 'btn btn-danger' %>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <hr />
 
@@ -69,7 +101,7 @@
           </div>
 
           <div class="col-6 footer blurb">
-            Hope to see you on the courts soon! <a href=https://amber-mcgregor.netlify.com/">[Amber McGregor]</a><br />
+            Hope to see you on the courts soon! <a href=https://amber-mcgregor.netlify.com">[Amber McGregor]</a><br />
             Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
 
             
