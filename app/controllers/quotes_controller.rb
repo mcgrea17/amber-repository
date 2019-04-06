@@ -1,8 +1,5 @@
 class QuotesController < ApplicationController
   
-  def index
-    @quote = Quote.order("RANDOM()").first
-  end
 
   def create
     
@@ -14,6 +11,11 @@ class QuotesController < ApplicationController
 
     redirect_to quotes_path
   end
+
+ def index
+    @quote = Quote.order("RANDOM()").first
+ end
+
 
   def about
   end
