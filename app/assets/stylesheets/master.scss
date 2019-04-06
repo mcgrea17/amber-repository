@@ -62,7 +62,7 @@ hr {
 h1 {
   font-family: 'sailregular', sans-serif;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 60px;
 
 }
 
@@ -73,6 +73,7 @@ h2 {
 .next-quote {
   color:#f61d0e;
   font-family: 'sailregular', sans-serif;
+   border-bottom: 1px solid #f61d0e;
   font-size:20px;
 }
 
@@ -85,4 +86,24 @@ h2 {
 
 .logo:hover{
   text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+   font-family: 'sailregular';
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'sailregular', sans-serif;
+}
+
+::selection {
+  background-color: #f61d0e;
+  background-color: rgba(0,0,0,.99)
 }
