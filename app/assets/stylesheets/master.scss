@@ -43,6 +43,10 @@
   padding-top: 26px;
 }
 
+.links:hover {
+   text-decoration: none;
+}
+
 .links a {
   color: 000eff;
   font-size: 25px;
@@ -75,6 +79,10 @@ h1 {
   font-size:20px;
 }
 
+.next-quote:hover{
+  text-decoration: none;
+}
+
 .footer-blurb {
   font-family: 'sailregular';
   font-style: italic;
@@ -85,6 +93,8 @@ h1 {
 .logo:hover{
   text-decoration: none;
 }
+
+
 
 @media (max-width: 750px) {
   .footer-blurb {
