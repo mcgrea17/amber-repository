@@ -53,11 +53,12 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        
+           <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+         
         </div>
         <%= simple_form_for Quote.new do |f| %>
 
@@ -67,13 +68,14 @@
           <br />
           <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Jane Doe" %>
 
-          <br />
-          <%= f.submit 'Create', class: 'btn btn-danger' %>
-          <% end %>
+         
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           <br />
+          <%= f.submit 'Create', class: 'btn btn-danger' %>
         </div>
+       <% end %>
       </div>
     </div>
   </div>
@@ -101,8 +103,8 @@
           </div>
 
           <div class="col-12-col col-sm-6 footer blurb">
-            Hope to see you on the courts soon! <a href=https://amber-mcgregor.netlify.com">[Amber McGregor]</a><br />
-            Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+            Hope to see you on the courts soon! <a target="_blank" href="https://amber-mcgregor.netlify.com">[Amber McGregor]</a><br />
+            Want to build your own Splurty Web App - <a target="_blank" href="https://online.bootcampspot.com">Learn how to code here</a>
 
             
           </div>

@@ -66,14 +66,12 @@ h1 {
 
 }
 
-h2 {
-  
-}
+
 
 .next-quote {
   color:#f61d0e;
   font-family: 'sailregular', sans-serif;
-   border-bottom: 1px solid #f61d0e;
+   border-bottom: 1px solid;
   font-size:20px;
 }
 
@@ -100,6 +98,11 @@ h2 {
 
 h2 span {
   color: #dddddd;
+  font-family: 'sailregular', sans-serif;
+}
+
+
+h2 {
   font-family: 'sailregular', sans-serif;
 }
 
