@@ -1,24 +1,7 @@
-# README
+# Splurty
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app allows people to view and write qutes about tennis.  The home page will display a random;y selected quote for you to view.  To see another quote select "This isn't enough, I need more".  To add a quote "Contribute".  Then add a quote an author name.  This was my first app to learn the structure and basics of Ruby on Rails.
 
-Things you may want to cover:
+To view the app: https://splurty-amber-mcgregor.herokuapp.com/quotes
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![splurty](https://user-images.githubusercontent.com/34463810/65835039-56c16f00-e296-11e9-933f-f56c46897c21.png)
